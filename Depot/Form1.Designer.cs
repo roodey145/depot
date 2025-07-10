@@ -29,24 +29,24 @@
         private void InitializeComponent()
         {
             this.addItem1 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.productNumberTxt = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.productNameTxt = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.bundlePiecesTxt = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.piecesTxt = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.numberOfBundlesTxt = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.priceTxt = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -58,7 +58,7 @@
             // addItem1
             // 
             this.addItem1.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.addItem1.Location = new System.Drawing.Point(245, 335);
+            this.addItem1.Location = new System.Drawing.Point(241, 359);
             this.addItem1.Name = "addItem1";
             this.addItem1.Size = new System.Drawing.Size(200, 49);
             this.addItem1.TabIndex = 0;
@@ -66,21 +66,21 @@
             this.addItem1.UseVisualStyleBackColor = false;
             this.addItem1.Click += new System.EventHandler(this.addItem1_Click);
             // 
-            // textBox3
+            // productNumberTxt
             // 
-            this.textBox3.Location = new System.Drawing.Point(3, 27);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(194, 20);
-            this.textBox3.TabIndex = 3;
+            this.productNumberTxt.Location = new System.Drawing.Point(3, 27);
+            this.productNumberTxt.Name = "productNumberTxt";
+            this.productNumberTxt.Size = new System.Drawing.Size(194, 20);
+            this.productNumberTxt.TabIndex = 3;
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.textBox3, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.productNumberTxt, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(245, 12);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(241, 36);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -103,9 +103,9 @@
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Controls.Add(this.textBox1, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.productNameTxt, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.label2, 0, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(245, 79);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(241, 103);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -114,12 +114,12 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(200, 49);
             this.tableLayoutPanel2.TabIndex = 6;
             // 
-            // textBox1
+            // productNameTxt
             // 
-            this.textBox1.Location = new System.Drawing.Point(3, 27);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(194, 20);
-            this.textBox1.TabIndex = 3;
+            this.productNameTxt.Location = new System.Drawing.Point(3, 27);
+            this.productNameTxt.Name = "productNameTxt";
+            this.productNameTxt.Size = new System.Drawing.Size(194, 20);
+            this.productNameTxt.TabIndex = 3;
             // 
             // label2
             // 
@@ -137,8 +137,8 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.Controls.Add(this.label3, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.textBox2, 0, 1);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(245, 144);
+            this.tableLayoutPanel3.Controls.Add(this.bundlePiecesTxt, 0, 1);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(241, 168);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
@@ -147,13 +147,6 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(95, 49);
             this.tableLayoutPanel3.TabIndex = 7;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(3, 27);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(89, 20);
-            this.textBox2.TabIndex = 3;
             // 
             // label3
             // 
@@ -164,6 +157,14 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Pieces in bundle";
             // 
+            // bundlePiecesTxt
+            // 
+            this.bundlePiecesTxt.Location = new System.Drawing.Point(3, 27);
+            this.bundlePiecesTxt.Name = "bundlePiecesTxt";
+            this.bundlePiecesTxt.Size = new System.Drawing.Size(89, 20);
+            this.bundlePiecesTxt.TabIndex = 3;
+            this.bundlePiecesTxt.TextChanged += new System.EventHandler(this.bundlePiecesTxt_TextChanged);
+            // 
             // tableLayoutPanel4
             // 
             this.tableLayoutPanel4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -171,8 +172,8 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.Controls.Add(this.label4, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.textBox4, 0, 1);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(245, 210);
+            this.tableLayoutPanel4.Controls.Add(this.piecesTxt, 0, 1);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(241, 234);
             this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 2;
@@ -191,12 +192,12 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "Pieces";
             // 
-            // textBox4
+            // piecesTxt
             // 
-            this.textBox4.Location = new System.Drawing.Point(3, 27);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(194, 20);
-            this.textBox4.TabIndex = 3;
+            this.piecesTxt.Location = new System.Drawing.Point(3, 27);
+            this.piecesTxt.Name = "piecesTxt";
+            this.piecesTxt.Size = new System.Drawing.Size(194, 20);
+            this.piecesTxt.TabIndex = 3;
             // 
             // tableLayoutPanel5
             // 
@@ -204,9 +205,9 @@
             this.tableLayoutPanel5.ColumnCount = 1;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.Controls.Add(this.textBox5, 0, 1);
+            this.tableLayoutPanel5.Controls.Add(this.numberOfBundlesTxt, 0, 1);
             this.tableLayoutPanel5.Controls.Add(this.label5, 0, 0);
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(340, 144);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(336, 168);
             this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 2;
@@ -215,6 +216,13 @@
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel5.Size = new System.Drawing.Size(105, 49);
             this.tableLayoutPanel5.TabIndex = 9;
+            // 
+            // numberOfBundlesTxt
+            // 
+            this.numberOfBundlesTxt.Location = new System.Drawing.Point(3, 27);
+            this.numberOfBundlesTxt.Name = "numberOfBundlesTxt";
+            this.numberOfBundlesTxt.Size = new System.Drawing.Size(99, 20);
+            this.numberOfBundlesTxt.TabIndex = 3;
             // 
             // label5
             // 
@@ -225,13 +233,6 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "Number of bundles";
             // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(3, 27);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(99, 20);
-            this.textBox5.TabIndex = 3;
-            // 
             // tableLayoutPanel6
             // 
             this.tableLayoutPanel6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -239,8 +240,8 @@
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.Controls.Add(this.label6, 0, 0);
-            this.tableLayoutPanel6.Controls.Add(this.textBox6, 0, 1);
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(245, 272);
+            this.tableLayoutPanel6.Controls.Add(this.priceTxt, 0, 1);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(241, 296);
             this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 2;
@@ -259,12 +260,13 @@
             this.label6.TabIndex = 4;
             this.label6.Text = "Price";
             // 
-            // textBox6
+            // priceTxt
             // 
-            this.textBox6.Location = new System.Drawing.Point(3, 27);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(194, 20);
-            this.textBox6.TabIndex = 3;
+            this.priceTxt.Location = new System.Drawing.Point(3, 27);
+            this.priceTxt.Name = "priceTxt";
+            this.priceTxt.Size = new System.Drawing.Size(194, 20);
+            this.priceTxt.TabIndex = 3;
+            this.priceTxt.TextChanged += new System.EventHandler(this.priceTxt_TextChanged);
             // 
             // Form1
             // 
@@ -299,24 +301,24 @@
         #endregion
 
         private System.Windows.Forms.Button addItem1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox productNumberTxt;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox productNameTxt;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox bundlePiecesTxt;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox piecesTxt;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox numberOfBundlesTxt;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox priceTxt;
     }
 }
 

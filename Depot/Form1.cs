@@ -20,6 +20,24 @@ namespace Depot
         private void addItem1_Click(object sender, EventArgs e)
         {
             //Console.WriteLine(itemName.Text);
+            
+            string productId=productNumberTxt.Text;
+            string productName = productNameTxt.Text;
+            string bundlePiecesText = bundlePiecesTxt.Text;
+            string numberOfBundlesText = numberOfBundlesTxt.Text;
+            string piecesText = piecesTxt.Text;
+            string priceText = priceTxt.Text;
+
+        }
+
+        private void bundlePiecesTxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void priceTxt_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
