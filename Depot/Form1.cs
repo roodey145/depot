@@ -19,7 +19,7 @@ namespace Depot
 
         private void addItem1_Click(object sender, EventArgs e)
         {
-            Console.WriteLine(itemName.Text);
+            //Console.WriteLine(itemName.Text);
         }
     }
 }
